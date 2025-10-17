@@ -3,21 +3,22 @@
   "version": "0.2.0",
   "description": "Core types and functionality of OpenID Federation",
   "license": "Apache-2.0",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./package.json": "./package.json"
-  },
+  "exports": "./src/index.ts",
   "files": ["dist"],
   "publishConfig": {
-    "access": "public",                         // required for scoped packages
-    "registry": "https://registry.npmjs.org/"   // ensure publish goes to npm
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./package.json": "./package.json"
+    },
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "homepage": "https://github.com/openwallet-foundation-labs/openid-federation-ts/tree/main/packages/core",
   "repository": {
